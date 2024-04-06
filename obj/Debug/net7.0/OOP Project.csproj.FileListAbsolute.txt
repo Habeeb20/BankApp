@@ -1,0 +1,14 @@
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\OOP Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\OOP Project.AssemblyInfoInputs.cache
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\OOP Project.AssemblyInfo.cs
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\OOP Project.csproj.CoreCompileInputs.cache
+C:\Users\ademo\Desktop\OOP Project\bin\Debug\net7.0\OOP Project.exe
+C:\Users\ademo\Desktop\OOP Project\bin\Debug\net7.0\OOP Project.deps.json
+C:\Users\ademo\Desktop\OOP Project\bin\Debug\net7.0\OOP Project.runtimeconfig.json
+C:\Users\ademo\Desktop\OOP Project\bin\Debug\net7.0\OOP Project.dll
+C:\Users\ademo\Desktop\OOP Project\bin\Debug\net7.0\OOP Project.pdb
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\OOP Project.dll
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\refint\OOP Project.dll
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\OOP Project.pdb
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\OOP Project.genruntimeconfig.cache
+C:\Users\ademo\Desktop\OOP Project\obj\Debug\net7.0\ref\OOP Project.dll
