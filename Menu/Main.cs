@@ -22,8 +22,10 @@ namespace OOP_Project.Menu
             switch (option)
             {
                 case 1:
+                    customerRegistration.RegisterMenu()
                     break;
                 case 2:
+                    customerLogin.Login();
                     break;
                 default:
                     break;
@@ -39,7 +41,7 @@ namespace OOP_Project.Menu
 
         public void AdminMenu()
         {
-            
+
         }
     }
 }

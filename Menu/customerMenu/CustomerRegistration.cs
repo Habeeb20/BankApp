@@ -1,3 +1,4 @@
+using System;
 using System.Reflection.Emit;
 using Services.Implementations;
 using Services.Interfaces;
@@ -67,6 +68,10 @@ namespace Menu.Customer
                 Console.WriteLine("create a password");
                 string pass= Console.ReadLine();
           
+            }
+            if(customer is null)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
             }
             System.Console.WriteLine("Login successful");
           
