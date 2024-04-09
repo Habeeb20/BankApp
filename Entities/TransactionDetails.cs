@@ -2,7 +2,7 @@ namespace OOP_Project.Entities
 {
     public class TransactionDetails :BaseEntity
     {
-        public int Pin;
+        public Guid AccountId = default!;
         public decimal Amount;
 
         public DateTime TransactionDate = DateTime.Now;

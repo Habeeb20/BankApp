@@ -10,7 +10,15 @@ namespace OOP_Project.Repository.Implementation
 {
     public class CustomerRepository: ICustomerRepository
     {
-        List<Customer> Customers_DB = new List<Customer>();
+       private readonly List<Customer> Customers_DB = new List<Customer>();
+
+       public CustomerRepository()
+       {
+            Customers_DB = new List<Customer>();
+
+       }
+
+     
 
         public bool Add(Customer customer)
         {
@@ -25,6 +33,20 @@ namespace OOP_Project.Repository.Implementation
         public Customer GetByNIN(string nin)
         {
             var customer = Customers_DB.Find(c => c.NIN == nin);
+            return customer;
+        }
+
+        public Customer Get(string phone, string password)
+        {
+            var customer = Customers_DB.
+            FirstOrDefault(x => x.Phone == phone && x.Password == password);
+            return customer;
+        }
+        
+        public Customer Get(string password)
+        {
+            var customer = Customers_DB.
+            FirstOrDefault(x => x.Password == password);
             return customer;
         }
 

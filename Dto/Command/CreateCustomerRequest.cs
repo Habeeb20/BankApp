@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace OOP_Project.Entities
+using OOP_Project.Entities; 
+namespace OOP_Project.Dto.Command
 {
-    public class User : BaseEntity
+    public class CreateCustomerRequest
     {
         public required string FirstName;
         public required string LastName;
@@ -13,6 +9,10 @@ namespace OOP_Project.Entities
         public required string Password;
         public required Gender Gender;
 
-       
+        public required string Address;
+
+        public required string NIN;
+
+        
     }
 }

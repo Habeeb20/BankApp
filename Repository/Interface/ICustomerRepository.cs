@@ -5,11 +5,13 @@ namespace OOP_Project.Repository.Interface
     {
         bool Add(Customer customer);
 
-        Customer? GetByNIN(string nin);
+        Customer GetByNIN(string nin);
 
-        Customer? Update(Guid id, Customer customer);
+        Customer Get(string phone, string password);
 
-       bool Delete(Customer customer);
+        Customer Update(Guid id, Customer customer);
+
+        bool Delete(Customer customer);
 
          
     }

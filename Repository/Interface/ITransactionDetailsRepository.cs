@@ -6,8 +6,8 @@ namespace OOP_Project.Repository.Interface
     {
          bool Add(TransactionDetails transaction);
 
-         List<TransactionDetails> GetAll(int pin);
+         List<TransactionDetails> GetAll(Guid accountId);
 
-         List<TransactionDetails> GetByDate(int pin, DateTime transactionDate);
+         List<TransactionDetails> GetByDate(Guid accountId, DateTime transactionDate);
     }
 }
