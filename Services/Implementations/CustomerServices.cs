@@ -12,7 +12,7 @@ namespace OOP_Project.Services.Implementations
 
         public CustomerServices()
         {
-            _customerRepository = new CustomerRespository();
+            _customerRepository = new CustomerRepository();
         }
 
         //dto
@@ -36,6 +36,12 @@ namespace OOP_Project.Services.Implementations
             var isCustomerAdded = _customerRepository.Add(customer);
             return isCustomerAdded;
             
+        }
+
+        public Customer GetCustomer(string phone, string password)
+        {
+            var customer = _customerRepository.Get(phone, password);
+            return customer;
         }
 
       

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj": {}
+    "C:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj": {
+    "C:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj",
+        "projectUniqueName": "C:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj",
         "projectName": "OOP Project",
-        "projectPath": "c:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj",
+        "projectPath": "C:\\Users\\ademo\\Desktop\\OOP Project\\OOP Project.csproj",
         "packagesPath": "C:\\Users\\ademo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ademo\\Desktop\\OOP Project\\obj\\",
+        "outputPath": "C:\\Users\\ademo\\Desktop\\OOP Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ademo\\AppData\\Roaming\\NuGet\\NuGet.Config"
