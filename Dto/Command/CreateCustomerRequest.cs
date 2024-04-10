@@ -9,7 +9,7 @@ namespace OOP_Project.Dto.Command
         public required string Password;
         public required Gender Gender;
 
-        public required string Address;
+        public string? Address;
 
         public required string NIN;
 

@@ -8,20 +8,17 @@ namespace OOP_Project.Services.Implementations
 {
     public class CustomerServices : ICustomerService
     {
-        private readonly ICustomerRepository _customerRepository;
+        private static  ICustomerRepository _customerRepository;
 
         public CustomerServices()
         {
             _customerRepository = new CustomerRepository();
         }
-
         //dto
-
         public bool Register(CreateCustomerRequest request)
         {
             if(request is null)
             {
-
                 return false;
             }
             Customer customer = new()

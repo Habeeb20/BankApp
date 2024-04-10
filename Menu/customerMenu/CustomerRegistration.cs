@@ -1,16 +1,19 @@
 using System;
 using System.Reflection.Emit;
-using Services.Implementations;
-using Services.Interfaces;
+using OOP_Project.Services.Implementations;
+using OOP_Project.Services.Interface;
+using OOP_Project.Menu;
+using OOP_Project.Dto.Command;
+using OOP_Project.Entities;
 
-namespace Menu.Customer
+namespace  OOP_Project.Menu.customerMenu
 {
     public class CustomerRegistration
     {
         ICustomerService _customerService;
         public CustomerRegistration()
         {
-            _customerService = new CustomerService();
+            _customerService = new CustomerServices();
         }
 
         public void RegisterMenu()
@@ -26,10 +29,10 @@ namespace Menu.Customer
             Console.WriteLine("confirm your password");
             string confirmPassword = Console.ReadLine();
             string confirmPass;
-            while (!confirmPass.Equals(newPass))
+            while (!confirmPassword.Equals(newpass))
             {
                 Console.WriteLine("Confirm password");
-                confirmPass = Console.ReadLine();
+                confirmPassword = Console.ReadLine();
             }
             //
             Console.WriteLine("Choose a gender\n1. Male\t2. Female");
@@ -46,14 +49,14 @@ namespace Menu.Customer
                 NIN = NIN,
                 Gender = (Gender) gender,
                 Password = newpass
+               
             };
-
-            var isCustomerRegistered = _customerService.RegisterCustomer(customerDto);
+            var isCustomerRegistered = _customerService.Register(customerDto);
             if(isCustomerRegistered != isCustomerRegistered)
             {
-                System.Console.WriteLine("successfully logged in");
-            } else {
                 System.Console.WriteLine("something went wrong");
+            } else {
+                System.Console.WriteLine("successfully logged in");
             }
 
         }

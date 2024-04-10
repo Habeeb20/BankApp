@@ -1,7 +1,10 @@
-﻿internal class Program;
-
-private static void Main(string[] args)
+﻿using OOP_Project.Menu;
+internal class Program
 {
-    var main = new Main();
-    main.LandingMenu();
+
+    private static void Main(string[] args)
+    {
+        var main = new Main();
+        main.LandingMenu();
+    }
 }

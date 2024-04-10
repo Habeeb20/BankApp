@@ -1,3 +1,5 @@
+using OOP_Project.Menu;
+using OOP_Project.Menu.customerMenu;
 namespace OOP_Project.Menu
 {
     public class Main
@@ -22,10 +24,10 @@ namespace OOP_Project.Menu
             switch (option)
             {
                 case 1:
-                    customerRegistration.RegisterMenu()
+                    CustomerMenu();
                     break;
                 case 2:
-                    customerLogin.Login();
+                    AdminMenu();
                     break;
                 default:
                     break;
@@ -36,6 +38,26 @@ namespace OOP_Project.Menu
         public void CustomerMenu()
         {
             System.Console.WriteLine("1. signin\n2. Sign-up");
+            int option;
+            while(!int.TryParse(Console.ReadLine(), out option))
+            {
+                // Console.ForegroundColor = Console.DarkRed;
+                System.Console.WriteLine("invalid input");
+                Console.ResetColor();
+            }
+            switch (option)
+            {
+                case 1:
+                    customerLogin.Login();
+                    break;
+                case 2:
+                    customerRegistration.RegisterMenu();
+                    customerLogin.Login();
+                    break;
+                
+                default:
+                    break;
+            }
 
         }
 
